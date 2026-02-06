@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoShop — товары для авто</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<header>
+  <h1>AutoShop</h1>
+  <nav>
+    <a href="/">Каталог</a>
+    <a href="#">Корзина (<span id="cart-count">0</span>)</a>
+    <a href="#">Контакты</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="filters">
+    <input id="search" type="text" placeholder="Поиск по товарам" />
+    <select id="category">
+      <option value="all">Все категории</option>
+      <option value="Автоинструмент и принадлежности">Автоинструмент и принадлежности</option>
+      <option value="Автозапчасти ВАЗ">Автозапчасти ВАЗ</option>
+      <option value="Автохимия и масла">Автохимия и масла</option>
+    </select>
+  </div>
+
+  <div id="grid" class="grid"></div>
+</div>
+
+<footer>
+  © 2026 AutoShop. Товары для авто.
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
